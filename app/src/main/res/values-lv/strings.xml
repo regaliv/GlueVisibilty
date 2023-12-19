@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GlueVisibility</string>
+    <string name="input_a_bottom">Ievadiet apakšējās daļas svaru</string>
+    <string name="input_b_top">Ievadiet augšējās daļas svaru</string>
+    <string name="left">Pa kreisi</string>
+    <string name="center">Pa vidu</string>
+    <string name="right">Pa labi</string>
+    <string name="no_glue">Nav līmēs</string>
+    <string name="with_glue">Ar līmi</string>
+    <string name="no_value_entered">Nav ievadīta vērtība</string>
+    <string name="bottom_right">Apakšā pa labi</string>
+    <string name="right_top">Labā augšdaļa</string>
+    <string name="middle_bottom">Vidējais dibens</string>
+    <string name="mid_top">Vidus augšdaļa</string>
+    <string name="bottom_left">Apakšā pa kreisi</string>
+    <string name="left_top">Kreisā augšdaļa</string>
+    <string name="_0_0" translatable="false">0.0</string>
+    <string name="g_m2">g/m2</string>
+    <string name="glue_measurement">Glue measurement</string>
+    <string name="calculate">Aprēķināt</string>
+
+</resources>
