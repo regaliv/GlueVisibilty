@@ -1,22 +1,24 @@
 <resources>
     <string name="app_name">GlueVisibility</string>
-    <string name="input_a_bottom">Enter the weight of the bottom part</string>
-    <string name="input_b_top">Enter the weight of the top part</string>
-    <string name="left">Left</string>
-    <string name="center">Center</string>
-    <string name="right">Right</string>
-    <string name="no_glue">No glue</string>
-    <string name="with_glue">With glue</string>
-    <string name="no_value_entered">No value entered</string>
-    <string name="bottom_right">Bottom right</string>
-    <string name="right_top">Right top</string>
-    <string name="middle_bottom">Middle bottom</string>
-    <string name="mid_top">Mid top</string>
-    <string name="bottom_left">Bottom left</string>
-    <string name="left_top">Left top</string>
+    <string name="input_a_bottom"><font size = "55">Ievadiet APAKŠĒJĀS daļas svaru</font></string>
+    <string name="input_b_top"><font size = "55">Ievadiet AUGŠĒJĀS daļas svaru</font></string>
+    <string name="left">Pa kreisi</string>
+    <string name="center">Pa vidu</string>
+    <string name="right">Pa labi</string>
+    <string name="with_glue">Ar līmi</string>
+    <string name="no_value_entered">Nav ievadīta vērtība</string>
+    <string name="bottom_right">Apakšā pa labi</string>
+    <string name="right_top">Labā augšdaļa</string>
+    <string name="middle_bottom">Vidējais dibens</string>
+    <string name="mid_top">Vidus augšdaļa</string>
+    <string name="bottom_left">Apakšā pa kreisi</string>
+    <string name="left_top">Kreisā augšdaļa</string>
     <string name="_0_0" translatable="false">0.0</string>
     <string name="g_m2">g/m2</string>
     <string name="glue_measurement">Glue measurement</string>
-    <string name="calculate">Calculate</string>
+    <string name="calculate">Aprēķināt</string>
+    <string name="no_glue">Nav līmēs</string>
+
+
 
 </resources>

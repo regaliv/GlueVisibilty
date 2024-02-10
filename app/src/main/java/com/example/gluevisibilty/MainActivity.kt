@@ -1,44 +1,20 @@
 package com.example.gluevisibilty
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.example.gluevisibilty.databinding.ActivityMainBinding
+import java.lang.String.format
 
 class MainActivity : AppCompatActivity() {
-
-    /*private var a:Double = 0.0
-    private var b:Double = 0.0
-    private var c:Double = 0.0
-    private var d:Double = 0.0
-    private var e:Double = 0.0
-    private var f:Double = 0.0*/
-
-
-    /*private var aa: Double = 0.0
-    private var bb: Double = 0.0
-    private var cc: Double = 0.0
-    private var dd: Double = 0.0
-    private var ee: Double = 0.0
-    private var ff: Double = 0.0*/
-
 
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-        /*aa= list[0].toDouble()
-        bb= list[1].toDouble()
-        cc= list[2].toDouble()
-        dd= list[3].toDouble()
-        ee= list[4].toDouble()
-        ff= list[5].toDouble()*/
-
-
-
 
         binding.button.setOnClickListener {
 
@@ -63,30 +39,28 @@ class MainActivity : AppCompatActivity() {
                 binding.Cl2.visibility = View.GONE
             }
         }
-
         binding.imageButton2.setOnClickListener {
             binding.CL3.visibility = View.GONE
             binding.Cl2.visibility = View.VISIBLE
         }
-
     }
+    @SuppressLint("DefaultLocale")
+    private fun getResult() {
 
-    private fun getResult(): String {
-
-
-        val a: Double
+       val a: Double
         val b: Double
         val c: Double
+        val d: Double
         val e: Double
         val f: Double
-        val d: Double
 
         val aa: Double
         val bb: Double
         val cc: Double
+        val dd: Double
         val ee: Double
         val ff: Double
-        val dd: Double
+
 
         val aaa: Double
         val bbb: Double
@@ -95,10 +69,10 @@ class MainActivity : AppCompatActivity() {
         val eee: Double
         val fff: Double
 
-
         val const: Double = 1/(0.75*0.40)
 
         binding.apply {
+
             a = edA.text.toString().toDouble()
             b = edB.text.toString().toDouble()
             c = edC.text.toString().toDouble()
@@ -120,20 +94,24 @@ class MainActivity : AppCompatActivity() {
             eee = (ee - e) * const
             fff = (ff - f) * const
 
+            val aaaa =  format("%.2f", aaa)
+            val bbbb =  format("%.2f", bbb)
+            val cccc =  format("%.2f", ccc)
+            val dddd =  format("%.2f", ddd)
+            val eeee =  format("%.2f", eee)
+            val ffff =  format("%.2f", fff)
 
-            binding.textView111.text = aaa.toString()
-            binding.textView222.text = bbb.toString()
-            binding.textView333.text = ccc.toString()
-            binding.textView444.text = ddd.toString()
-            binding.textView555.text = eee.toString()
-            binding.textView777.text = fff.toString()
 
+            binding.textView111.text = aaaa.toString()
+            binding.textView222.text = bbbb.toString()
+            binding.textView333.text = cccc.toString()
+            binding.textView444.text = dddd.toString()
+            binding.textView555.text = eeee.toString()
+            binding.textView777.text = ffff.toString()
 
         }
 
-        return aaa.toString()
     }
-
 
     private fun isFieldEmpty(): Boolean {
         binding.apply {// apply даёт возможность прикрепить к binding несколько активностей
