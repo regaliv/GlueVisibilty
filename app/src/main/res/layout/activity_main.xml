@@ -12,92 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#9F6363"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:id="@+id/LLvert"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="355dp"
-            android:layout_marginEnd="250dp"
-            android:layout_marginBottom="120dp"
-            android:orientation="vertical"
-
-            app:layout_constraintBottom_toTopOf="@+id/imageButton2"
-            app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout8">
-
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="40dp"
-                android:text="Poliforms"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
-                android:text="HPL/PPL"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
-                android:text="Skaida(Ozols)"
-                android:textColor="@color/black" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/LLvert2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="355dp"
-            android:layout_marginBottom="120dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout8">
-
-
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="40dp"
-                android:text="100-110g/m²"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/textView112"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
-                android:text="85-90g/m²"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/textView116"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
-                android:text="80-90g/m²"
-                android:textColor="@color/black" />
-        </LinearLayout>
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -412,6 +331,88 @@
                 app:layout_constraintStart_toStartOf="@+id/textView555" />
 
 
+            <LinearLayout
+                android:id="@+id/LLvert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Poliforms"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="HPL/PPL"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Skaida(Ozols)"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLvert2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+
+
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:text="100-110g/m²"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView112"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="85-90g/m²"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView116"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="80-90g/m²"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -423,7 +424,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#90B5E3"
-        android:visibility="invisible"
+        android:visibility="visible"
         tools:context=".MainActivity2">
 
         <com.google.android.material.textfield.TextInputLayout
